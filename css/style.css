@@ -23,7 +23,8 @@ body {
     background-image: url('../assets/images/background-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
+    object-fit: cover;
+    position: relative;
 
 }
 
@@ -32,14 +33,15 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px auto;
+    margin: 0px auto;
+    padding-top: 25px;
     width: 78vw;
     position: relative;
     z-index: 10;
@@ -48,7 +50,7 @@ nav {
 nav .logo img {
     width: 150px;
     color: rgb(146, 5, 5);
-    font-weight:900;
+    font-weight: 900;
 
 }
 
@@ -82,7 +84,7 @@ nav .btn {
     padding: 9px 22px;
     background-color: black;
     color: #fff;
-    
+
     border-radius: 5px;
     /* background-position: right 10px center; */
 
@@ -118,7 +120,8 @@ nav .btn {
 }
 
 .hero-Content h1 {
-    width: 40.5vw;
+    /* width: 40.5vw; */
+    max-width: 600px;
     margin: 0px auto;
     font-size: 56px;
     font-family: Arial, Helvetica, sans-serif;
@@ -148,7 +151,8 @@ nav .btn {
     letter-spacing: 1px;
 
 }
-.hero-Content form .btn{
+
+.hero-Content form .btn {
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -157,6 +161,7 @@ nav .btn {
     margin-top: 15px;
 
 }
+
 .hero-Content form input {
     font-size: 16px;
     font-weight: 400;
@@ -165,7 +170,7 @@ nav .btn {
     background-color: rgba(17, 17, 17, 0.788);
     border: 1px solid gray;
     border-radius: 5px;
-    padding:17px 160px 17px 17px;
+    padding: 17px 160px 17px 17px;
 
 }
 
@@ -181,16 +186,192 @@ nav .btn {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
     padding: 18px 50px;
+
+}
+
+.faq-Section {
+    width: 78vw;
+    margin: 50px auto;
+
+}
+
+.faq-Section h1 {
+    font-weight: 500;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-question-content-icon {
+    font-size: 40px;
+    /* font-weight:400; */
+}
+
+.faq-question {
+    background-color: rgb(54, 53, 53);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 15px 30px;
+    margin: 10px 0px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+
+.faq-question:hover {
+    transition: 0.3s;
+    background-color: rgb(68, 67, 67);
+}
+
+.faq-Section-confirm {
+    /* background-color: red; */
+    width: 60vw;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    /* gap: 10px; */
+    margin-top: 60px;
+
+}
+
+.faq-Section-confirm h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: block; */
+    /* padding: 15px; */
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.faq-Section-confirm .btn {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+
+}
+
+.faq-Section-confirm input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(17, 17, 17, 0.788);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 17px 340px 17px 17px;
+
+}
+
+.faq-Section-confirm input::placeholder {
+    color: #d4d1d1d3;
     /* background-color: black; */
+}
+
+.faq-Section-confirm .btn button {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 18px 50px;
+
+}
+
+.footer {
+    width: 78vw;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 130px;
+    
+}
+
+.footer h1 {
+    /* background-color: red; */
+    font-size: 16px;
+    font-weight: 400;
+    color: #eceaea;
+}
+
+.footer-content {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+    /* row-gap: 20px; */
 
 
 }
 
-.hero-Content form .btn button span{
+.footer-content-part{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    color: #cececed5;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 21px;
+
+
+}
+.footer .location{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f0efef;
+
+}
+
+.footer .para{
+    font-size: 13px;
+    line-height: normal;
+    color: #888787;
+
+}
+
+
+/* .
+hero-Content form .btn button span {
     font-weight: 500;
     font-size: 28px;
-}
+} */
+
+/* 
+@media only screen and (max-width:960px) {
+    .hero-Content {
+        width: 60vw;
+        margin: 120px auto 10px auto;
+    }
+
+    .hero-Content h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+
+
+    }
+
+    .hero-Content p {
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+
+    .hero-Content form h3 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+} */
