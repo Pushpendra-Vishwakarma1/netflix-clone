@@ -36,8 +36,8 @@ button {
 
 .layout {
     background-color: rgba(17, 17, 17, 0.788);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: 10;
 }
@@ -548,7 +548,7 @@ nav .btn {
     .hero {
         width: 80vw;
         /* min-height: 80vh; */
-        margin: 0px auto;
+        margin: 30px auto;
     }
 
     .hero-Content {
