@@ -25,19 +25,20 @@ button {
 .hero-Section {
     width: 100vw;
     height: 100vh;
-    height: auto;
+    /* height: auto; */
     background-image: url('../assets/images/background-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
+    /* object-fit: cover; */
     position: relative;
 
 }
 
 .layout {
     background-color: rgba(17, 17, 17, 0.788);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: 10;
 }
@@ -381,6 +382,11 @@ nav .btn {
         margin: 0px auto;
     }
 
+    .hero-Section {
+        height: 70vh;
+    }
+
+
 
 
 
@@ -528,6 +534,11 @@ nav .btn {
 
 
 @media only screen and (max-width:600px) {
+    .hero-Section {
+        height: 80vh;
+    }
+
+
 
     nav {
         padding-top: 20px;
@@ -547,8 +558,8 @@ nav .btn {
 
     .hero {
         width: 80vw;
-        /* min-height: 80vh; */
-        margin: 30px auto;
+        /* min-height: 70vh; */
+        margin: 40px auto;
     }
 
     .hero-Content {
